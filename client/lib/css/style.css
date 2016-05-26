@@ -25,4 +25,8 @@ li.notification.info{
 }
 
 thead tr th{text-transform: capitalize;}
-#pagination{text-align: center;}
+.pagination{margin-top: 0px}
+.loader{
+	text-align: center;
+  margin-top: 90px;
+}

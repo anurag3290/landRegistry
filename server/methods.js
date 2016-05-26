@@ -1,7 +1,6 @@
 Meteor.methods({
-	getRegisrtyData : function(postalCode, offset, limit){
-		console.log('offset',offset)
-		console.log('limit',limit)
+	getRegisrtyData : function(postalCode, page, limit){
+		var offset = (page-1)*limit
 		var fut = new Future();
 		if(postalCode){
 			var url = 'http://landregistry.data.gov.uk/app/hpi/qonsole/query'
@@ -16,11 +15,8 @@ Meteor.methods({
 					fut['return']({'error': error});
 				}
 				else{
-					console.log('*************')
 					var data = JSON.parse(res.content)
-					console.log(data.result)
 					fut['return']({'success': data.result});
-
 				}
 			})
 		}
