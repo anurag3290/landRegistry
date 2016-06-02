@@ -63,7 +63,7 @@ Template.home.helpers({
 Template.home.events({
 	'click .postalSubmit' : function(event, template){
 		var self = Template.instance()
-		self.postalCode = $('#postalCode').val()
+		self.postalCode = uppercase($('#postalCode').val())
 		self.page.set(1)
 		if(self.postalCode == ''){
 			Notifications.error('','Please enter the postal code')
@@ -116,4 +116,8 @@ function getData(postalCode, page, size){
 			self.bodyData.set(resultData)
 		}
 	});
+}
+
+function uppercase(str){
+	return str.toUpperCase()
 }

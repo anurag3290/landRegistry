@@ -1,21 +1,235 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/home/anurag/.meteor/packages/meteor-tool/.1.3.1.152ha1h++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm',
-1 verbose cli   'install' ]
-2 info using npm@2.14.22
-3 info using node@v0.10.43
-4 verbose readDependencies loading dependencies from /home/anurag/Meteor/landRegistry/package.json
-5 error install Couldn't read dependencies
-6 verbose stack Error: ENOENT, open '/home/anurag/Meteor/landRegistry/package.json'
-7 verbose cwd /home/anurag/Meteor/landRegistry
-8 error Linux 3.16.0-62-generic
-9 error argv "node" "/home/anurag/.meteor/packages/meteor-tool/.1.3.1.152ha1h++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm" "install"
-10 error node v0.10.43
-11 error npm  v2.14.22
-12 error path /home/anurag/Meteor/landRegistry/package.json
-13 error code ENOPACKAGEJSON
-14 error errno 34
-15 error package.json ENOENT, open '/home/anurag/Meteor/landRegistry/package.json'
-15 error package.json This is most likely not a problem with npm itself.
-15 error package.json npm can't find a package.json file in your current directory.
-16 verbose exit [ 34, true ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'spacejam' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'spacejam', null ]
+6 verbose cache add name=undefined spec="spacejam" args=["spacejam",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'spacejam',
+7 verbose parsed url   path: 'spacejam',
+7 verbose parsed url   href: 'spacejam' }
+8 silly lockFile 1654ab36-spacejam spacejam
+9 verbose lock spacejam /home/anurag/.npm/1654ab36-spacejam.lock
+10 silly lockFile 1654ab36-spacejam spacejam
+11 silly lockFile 1654ab36-spacejam spacejam
+12 verbose addNamed [ 'spacejam', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 644542b3-spacejam spacejam@
+15 verbose lock spacejam@ /home/anurag/.npm/644542b3-spacejam.lock
+16 silly addNameRange { name: 'spacejam', range: '*', hasData: false }
+17 verbose request where is /spacejam
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 35a65752ded01a6e
+20 verbose url raw /spacejam
+21 verbose url resolving [ 'https://registry.npmjs.org/', './spacejam' ]
+22 verbose url resolved https://registry.npmjs.org/spacejam
+23 verbose request where is https://registry.npmjs.org/spacejam
+24 info trying registry request attempt 1 at 12:58:48
+25 http GET https://registry.npmjs.org/spacejam
+26 http 200 https://registry.npmjs.org/spacejam
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"CJHTN7IDP9KB59YUO0ZNUINRZ"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'content-encoding': 'gzip',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     'content-length': '10243',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Wed, 01 Jun 2016 07:28:51 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sin6922-SIN',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1464766131.227469,VS0,VE251',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 silly addNameRange number 2 { name: 'spacejam', range: '*', hasData: true }
+29 silly addNameRange versions [ 'spacejam',
+29 silly addNameRange   [ '0.2.0',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.2',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.6',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.1.0-rc1',
+29 silly addNameRange     '1.1.0-rc2',
+29 silly addNameRange     '1.1.0-rc3',
+29 silly addNameRange     '1.1.0-rc4',
+29 silly addNameRange     '1.1.0-rc5',
+29 silly addNameRange     '1.1.0-rc6',
+29 silly addNameRange     '1.1.0-rc7',
+29 silly addNameRange     '1.1.0-rc8',
+29 silly addNameRange     '1.1.0-rc9',
+29 silly addNameRange     '1.1.0-rc10',
+29 silly addNameRange     '1.1.0-rc11',
+29 silly addNameRange     '1.1.0-rc12',
+29 silly addNameRange     '1.1.0-rc13',
+29 silly addNameRange     '1.1.0-rc14',
+29 silly addNameRange     '1.1.0-rc15',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.1.2',
+29 silly addNameRange     '1.1.3',
+29 silly addNameRange     '1.1.4',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.2.2',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.4.1',
+29 silly addNameRange     '1.5.0',
+29 silly addNameRange     '1.5.1',
+29 silly addNameRange     '1.5.2',
+29 silly addNameRange     '1.6.0-rc1',
+29 silly addNameRange     '1.6.0-rc.2',
+29 silly addNameRange     '1.6.0',
+29 silly addNameRange     '1.6.1-rc.1',
+29 silly addNameRange     '1.6.1' ] ]
+30 verbose addNamed [ 'spacejam', '1.6.1' ]
+31 verbose addNamed [ '1.6.1', '1.6.1' ]
+32 silly lockFile 1c389cc8-spacejam-1-6-1 spacejam@1.6.1
+33 verbose lock spacejam@1.6.1 /home/anurag/.npm/1c389cc8-spacejam-1-6-1.lock
+34 silly lockFile 5c5f9e24--org-spacejam-spacejam-1-6-1-tgz https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+35 verbose lock https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz /home/anurag/.npm/5c5f9e24--org-spacejam-spacejam-1-6-1-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz',
+36 verbose addRemoteTarball   'd4d939cff22649370c25ede4c1b125576e735016' ]
+37 info retry fetch attempt 1 at 12:58:49
+38 verbose fetch to= /tmp/npm-7032-c8Q0a0j_/registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+39 http GET https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+40 http 200 https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+41 silly lockFile 5c5f9e24--org-spacejam-spacejam-1-6-1-tgz https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+42 silly lockFile 5c5f9e24--org-spacejam-spacejam-1-6-1-tgz https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz
+43 silly lockFile 1c389cc8-spacejam-1-6-1 spacejam@1.6.1
+44 silly lockFile 1c389cc8-spacejam-1-6-1 spacejam@1.6.1
+45 silly lockFile 644542b3-spacejam spacejam@
+46 silly lockFile 644542b3-spacejam spacejam@
+47 silly resolved [ { name: 'spacejam',
+47 silly resolved     version: '1.6.1',
+47 silly resolved     dependencies:
+47 silly resolved      { chai: '1.9.2',
+47 silly resolved        glob: '4.0.6',
+47 silly resolved        loglevel: '1.1.0',
+47 silly resolved        'phantomjs-prebuilt': '^2.1.7',
+47 silly resolved        psext: '0.0.4',
+47 silly resolved        rc: '0.5.1',
+47 silly resolved        semver: '4.1.0',
+47 silly resolved        underscore: '1.7.0' },
+47 silly resolved     devDependencies:
+47 silly resolved      { 'coffee-script': '1.8.0',
+47 silly resolved        mocha: '1.21.5',
+47 silly resolved        'sinon-chai': '2.6.0',
+47 silly resolved        tmp: '0.0.25',
+47 silly resolved        xmldom: '0.1.19',
+47 silly resolved        xpath: '0.0.9' },
+47 silly resolved     main: 'lib/main.js',
+47 silly resolved     scripts:
+47 silly resolved      { test: 'bin/npm-test.sh',
+47 silly resolved        compile: 'cake compile',
+47 silly resolved        prepublish: 'cake compile' },
+47 silly resolved     bin:
+47 silly resolved      { spacejam: 'bin/spacejam',
+47 silly resolved        'spacejam-mocha': 'bin/spacejam-mocha',
+47 silly resolved        'spacejam-init-bashrc': 'bin/spacejam-init-bashrc',
+47 silly resolved        'meteor-mocha': 'bin/meteor-mocha',
+47 silly resolved        mrun: 'bin/mrun',
+47 silly resolved        mtp: 'bin/mtp',
+47 silly resolved        'set-meteor-env': 'bin/set-meteor-env',
+47 silly resolved        'unset-meteor-env': 'bin/unset-meteor-env',
+47 silly resolved        'mongo-reset': 'bin/mongo-reset',
+47 silly resolved        mdeploy: 'bin/mdeploy',
+47 silly resolved        mpublish: 'bin/mpublish',
+47 silly resolved        mmpublish: 'bin/mmpublish',
+47 silly resolved        'npm-publish': 'bin/npm-publish' },
+47 silly resolved     description: 'Run your meteor package tinytests and mocha tests from the command line with phantomjs.',
+47 silly resolved     homepage: 'https://github.com/practicalmeteor/spacejam',
+47 silly resolved     bugs: { url: 'https://github.com/practicalmeteor/spacejam/issues' },
+47 silly resolved     keywords:
+47 silly resolved      [ 'spacejam',
+47 silly resolved        'meteor',
+47 silly resolved        'test-packages',
+47 silly resolved        'test-in-console',
+47 silly resolved        'tinytest',
+47 silly resolved        'mocha',
+47 silly resolved        'mocha.js',
+47 silly resolved        'practicalmeteor',
+47 silly resolved        'practicalmeteor:mocha',
+47 silly resolved        'practicalmeteor:mocha-console-runner',
+47 silly resolved        'ci',
+47 silly resolved        'continuous integration',
+47 silly resolved        'cd',
+47 silly resolved        'continuous delivery' ],
+47 silly resolved     licenses: [ [Object] ],
+47 silly resolved     engines: { node: '>= 0.10.x', npm: '>= 1.4.x' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git+https://github.com/practicalmeteor/spacejam.git' },
+47 silly resolved     author: { name: 'Spacejam.io', url: 'http://spacejam.io/' },
+47 silly resolved     gitHead: 'c7a577588f4d326145a37d7de202d53876caeb4c',
+47 silly resolved     _id: 'spacejam@1.6.1',
+47 silly resolved     _shasum: 'd4d939cff22649370c25ede4c1b125576e735016',
+47 silly resolved     _from: 'spacejam@',
+47 silly resolved     _npmVersion: '2.15.5',
+47 silly resolved     _nodeVersion: '4.4.5',
+47 silly resolved     _npmUser: { name: 'jsep', email: 'juanjsepulveda@gmail.com' },
+47 silly resolved     dist:
+47 silly resolved      { shasum: 'd4d939cff22649370c25ede4c1b125576e735016',
+47 silly resolved        tarball: 'https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+47 silly resolved     _npmOperationalInternal:
+47 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+47 silly resolved        tmp: 'tmp/spacejam-1.6.1.tgz_1464644061239_0.9862503169570118' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/spacejam/-/spacejam-1.6.1.tgz' } ]
+48 info install spacejam@1.6.1 into /usr/lib
+49 info installOne spacejam@1.6.1
+50 verbose lib/node_modules/spacejam unbuild
+51 verbose tar unpack /home/anurag/.npm/spacejam/1.6.1/package.tgz
+52 silly lockFile 8fdb82df-ar-usr-lib-node-modules-spacejam tar:///usr/lib/node_modules/spacejam
+53 verbose lock tar:///usr/lib/node_modules/spacejam /home/anurag/.npm/8fdb82df-ar-usr-lib-node-modules-spacejam.lock
+54 silly lockFile d3438560-g-npm-spacejam-1-6-1-package-tgz tar:///home/anurag/.npm/spacejam/1.6.1/package.tgz
+55 verbose lock tar:///home/anurag/.npm/spacejam/1.6.1/package.tgz /home/anurag/.npm/d3438560-g-npm-spacejam-1-6-1-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/spacejam'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/spacejam']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/spacejam',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/spacejam',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.16.0-62-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "spacejam"
+61 error cwd /home/anurag/Meteor/registryLand
+62 error node -v v0.10.37
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/spacejam
+65 error fstream_path /usr/lib/node_modules/spacejam
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/spacejam'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]

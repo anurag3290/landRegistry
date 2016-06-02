@@ -5,10 +5,12 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 service-configuration
 iron:router
 gfk:notifications
 http
 reactive-var
+sanjo:jasmine
+velocity:html-reporter
+sanjo:karma
